@@ -20,6 +20,6 @@ def get_weekday(current_weekday, days_ahead):
     >>> get_weekday(7, 72)
     2
     """
-    return (current_weekday + days_ahead) % 7
+    return (current_weekday + days_ahead - 1) % 7 + 1
 
 get_weekday(3, 1)
